@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: rgb(23, 25, 26); */
+    color: #fff;
+    font-family: sans-serif;
+}
+.navbar{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    background: #121230ef;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+}
+.navbar>.sup{
+    margin: 0;
+}
+.sup li{
+    list-style-type: none;
+    margin-top: 0;
+    /* padding-right: 30px; */
+}
+.sup ul{
+    display: flex;
+    margin-top: 0;
+}
+.navbar a{
+    width: 10px;
+    padding: 10px;
+    background-color: blueviolet;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navbar i {
+    font-size: 25px;
+    margin-right: 20px;
+}
+.burger, .sub-burger{
+    display: none;
+}
+
+/* kedua */
+.main{
+    padding: 80px;
+}
+.main .grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+}
+.main .sup{
+    position: relative;
+    
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+.imge img{
+    width: 100%;
+    height: fit-content;
+}
+.sup h3{
+    color: aquamarine;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sup p{
+    padding: 40px 0;
+}
+.sup button{
+   
+    padding: 15px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: none;
+    margin-right: 20px;
+  
+}
+.sub-head{
+    text-align: center;
+    line-height: 1.5;
+}
+.sub-head h4{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 25px;
+   line-height: 3;
+}
+.sub-head p{
+    color: rgb(166, 166, 255);
+ 
+}
+
+/* container-one */
+.container-one>.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 80px;
+    text-align: center;
+    line-height: 1.2;
+}
+.one{
+    padding: 30px;
+    width: 250px;
+    height: 300px;
+    background-color: blueviolet;
+    opacity: 0.6;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.one:hover{
+    transform: scale(1.2);
+}
+.one img{
+    width: 150px;
+}
+
+.one p{
+    margin-top: 30px;
+    color: #9b9b9c;
+   
+}
+/* container-2 */
+.container-2{
+    padding: 80px 0;
+    line-height: 1.5;
+    text-align: center;
+    color: #9b9b9c;
+}
+h1{
+    color: blueviolet;
+}
+/* .container-2>.circle{
+       position: absolute;
+    background-color: slateblue;
+    width: 100%;
+    height: 100%; 
+    clip-path: circle(150px at right 300px);
+    /* clip-path: ellipse(130px 140px at 10% 20%); */
+    /* clip-path: inset(100px 500px); */
+    /* clip-path: ellipse(100px 50px at 100% 50%); */
+/* } */ 
+footer{
+    padding: 50px 20px;
+    background-color: rgb(116, 64, 165);
+    opacity: 0.7;
+    color: #9b9b9c;
+}
+
+footer>.grid-4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.grid-4{
+    line-height: 2;
+}
+.grid-4 ul{
+    list-style-type: none;
+}
+.grid-4>.satu ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+/* mobile  */
+@media(max-width:768px){
+    .navbar{
+        display: none;
+    }
+    .main{
+        padding: 0;
+    }
+    .burger{
+        padding: 20px;
+        /* display: block; */
+      justify-content: space-between;
+       display: flex;
+       flex-direction: row;
+        
+    }
+    .burger i{
+        font-size: 30px;
+    }
+    .main>.grid-2{
+        grid-template-columns: 1fr;
+        padding: 50px;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+    .grid-3>.one{
+        width: 50%;
+        margin: auto;
+    }
+    .container-one>.grid-3{
+        grid-template-columns: 1fr;   
+    }
+    .one{
+       
+        width: 50%;
+    }
+    .sub-burger{
+       padding : 20px;
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+        text-align: start;
+        line-height: 2;
+        border-bottom: #f2f2f2;
+    }
+    
+    .sub-burger ul{
+        list-style-type: none;
+    }
+    footer>.grid-4{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 15px;
+    }
+}
