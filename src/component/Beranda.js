@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Helmet} from 'react-helmet'
-import '../Main.css'
+// import '../Main.css'
 const imae = require('../images/lukasz-szmigiel-w7fx1m6iKig-unsplash.jpg')
 
 

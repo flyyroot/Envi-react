@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './component/Navbar';
 import Main from './component/Main';
-
+import './style/style.css'
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}

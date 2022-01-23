@@ -1,12 +1,21 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+}
+:root{
+    --main-color: #00004eef;
+    --purple-color: #8000ff;
+    --white-color: rgba(255, 255, 255, 0.836);
 }
 body{
-    /* background-color: rgb(23, 25, 26); */
     color: #fff;
     font-family: sans-serif;
+    padding: 10px;
+    background-color: var(--main-color);
+    font-size: 1.3rem;
+}
+a{
+    color: var(--white-color);
+    text-decoration: none;
 }
 .navbar{
     padding: 20px 30px;
@@ -22,10 +31,16 @@ body{
 .navbar>.sup{
     margin: 0;
 }
+.navbar>.sub{
+    margin: 0;
+}
 .sup li{
     list-style-type: none;
     margin-top: 0;
-    /* padding-right: 30px; */
+    padding-right: 30px;
+}
+.sub h3{
+    margin-top: 2px;
 }
 .sup ul{
     display: flex;
@@ -144,16 +159,7 @@ body{
 h1{
     color: blueviolet;
 }
-/* .container-2>.circle{
-       position: absolute;
-    background-color: slateblue;
-    width: 100%;
-    height: 100%; 
-    clip-path: circle(150px at right 300px);
-    /* clip-path: ellipse(130px 140px at 10% 20%); */
-    /* clip-path: inset(100px 500px); */
-    /* clip-path: ellipse(100px 50px at 100% 50%); */
-/* } */ 
+
 footer{
     padding: 50px 20px;
     background-color: rgb(116, 64, 165);
